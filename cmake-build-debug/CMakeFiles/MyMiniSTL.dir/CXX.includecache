@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xuchen/CLionProjects/MyMiniSTL/main.cpp
+iostream
+-
+./src/allocator.h
+/Users/xuchen/CLionProjects/MyMiniSTL/src/allocator.h
+
+/Users/xuchen/CLionProjects/MyMiniSTL/src/allocator.h
+cstddef
+-
+
