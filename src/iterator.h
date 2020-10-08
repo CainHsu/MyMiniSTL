@@ -5,4 +5,8 @@
 #ifndef MYMINISTL_ITERATOR_H
 #define MYMINISTL_ITERATOR_H
 
+namespace MiniSTL{
+
+}
+
 #endif //MYMINISTL_ITERATOR_H

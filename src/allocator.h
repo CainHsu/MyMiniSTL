@@ -10,6 +10,7 @@
 #include <cstddef>
 
 #include "construct.h"
+#include "util.h"
 
 namespace MiniSTL{
     template <class T>
@@ -34,6 +35,11 @@ namespace MiniSTL{
         // 封装delete函数， 释放p指针所指的内存
         static void deallocate(pointer p, size_type n);
 
+        template<class... Args>
+        static void construct(T* p, Args&& ...args);
+
+        static void destroy(T* ptr);
+        static void destroy(T* first, T* last);
     };
 
     // ------------------------------------------------------------------------------------------
@@ -71,7 +77,23 @@ namespace MiniSTL{
         ::operator delete(p);
     }
 
+    template<class T>
+    template<class... Args>
+    void allocator<T>::construct(T* p, Args&& ...args){
+        // 可变模板参数解包：不断调用construct(T1 *p, const T2 &value)
+        // 此解包方式可能有问题<--------------------------------------------------------
+        MiniSTL::construct(p, MiniSTL::forward<Args>(args)...);
+    }
 
+    template<class T>
+    void allocator<T>::destroy(T *ptr) {
+        MiniSTL::destroy(ptr);
+    }
+
+    template<class T>
+    void allocator<T>::destroy(T *first, T *last) {
+        MiniSTL::destroy(first, last);
+    }
 
 }
 

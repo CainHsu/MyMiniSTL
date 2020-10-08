@@ -4,4 +4,5 @@
 CMakeFiles/MyMiniSTL.dir/main.cpp.o: ../main.cpp
 CMakeFiles/MyMiniSTL.dir/main.cpp.o: ../src/allocator.h
 CMakeFiles/MyMiniSTL.dir/main.cpp.o: ../src/construct.h
+CMakeFiles/MyMiniSTL.dir/main.cpp.o: ../src/util.h
 

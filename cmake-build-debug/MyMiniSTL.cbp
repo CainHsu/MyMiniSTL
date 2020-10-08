@@ -92,6 +92,9 @@
 		<Unit filename="/Users/xuchen/CLionProjects/MyMiniSTL/src/iterator.h">
 			<Option target="MyMiniSTL"/>
 		</Unit>
+		<Unit filename="/Users/xuchen/CLionProjects/MyMiniSTL/src/util.h">
+			<Option target="MyMiniSTL"/>
+		</Unit>
 		<Unit filename="/Users/xuchen/CLionProjects/MyMiniSTL/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

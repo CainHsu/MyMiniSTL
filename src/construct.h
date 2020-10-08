@@ -12,13 +12,13 @@ namespace MiniSTL{
     // 当p为null时无法使用 <------------------------------------------------------
     template<class T>
     inline void construct(T* p){
-        ::new (p) T(); // placement new，用法：调用T的构造函数，将构造好的内容放进p所指的内存中
+        ::new ((void*)p) T(); // placement new，用法：调用T的构造函数，将构造好的内容放进p所指的内存中
     }
 
     // 使用T1(value)构造函数，在T1所指内存构造出T1(value)对象
     template<class T1, class T2>
     inline void construct(T1 *p, const T2 &value){
-        ::new (p) T1(value);
+        ::new ((void*)p) T1(value);
     }
 
     // 调用析构函数析构参数对象
@@ -46,7 +46,7 @@ namespace MiniSTL{
         }
     }
 
-    //
+
     template<class iter>
     inline void destory(iter begin, iter end){
         destroyObjs(begin, end, std::is_trivially_destructible<
