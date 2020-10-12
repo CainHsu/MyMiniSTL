@@ -3,4 +3,4 @@ project(MyMiniSTL)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(MyMiniSTL main.cpp src/allocator.h src/construct.h src/iterator.h src/util.h)
+add_executable(MyMiniSTL main.cpp src/allocator.h src/construct.h src/iterator.h src/util.h src/type_traits.h)

@@ -29,6 +29,16 @@ util.h
 /Users/xuchen/CLionProjects/MyMiniSTL/src/construct.h
 new
 -
+iterator.h
+/Users/xuchen/CLionProjects/MyMiniSTL/src/iterator.h
+
+/Users/xuchen/CLionProjects/MyMiniSTL/src/iterator.h
+cstddef
+-
+type_traits.h
+/Users/xuchen/CLionProjects/MyMiniSTL/src/type_traits.h
+
+/Users/xuchen/CLionProjects/MyMiniSTL/src/type_traits.h
 
 /Users/xuchen/CLionProjects/MyMiniSTL/src/util.h
 cstddef

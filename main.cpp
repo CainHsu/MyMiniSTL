@@ -40,7 +40,9 @@ void test(T1 a, T2&&... args){
 
 
 int main() {
-
-    test(0.5, 1, 2, 3, 4, 5, 6);
-
+    // cout << std::is_convertible<double, char>::value;
+    vector<bool> a{true};
+    auto temp = a[0];
+    cout << sizeof(temp) << endl;
+    cout << a[0] << endl;
 }
